@@ -1,0 +1,23 @@
+{% extends 'theme.html'%}
+{% block content %}
+<h2>Amazon</h2>
+<div class="container">
+    <div class="row">
+        {% for y in x %}
+        <div class="col-md-3">
+<div class="card" style=".....">
+  <img src="{{y.image}}",class="card-image-top",alt=".......">
+  <div class="card-body">
+    <h5 class="card-title">{{y.name}}</h5>
+    <p class="card-text">{{y.price}}</p>
+    <p class="card-text">{{y.stock}}</p>
+    <p class="card-text">{{y.desc}}</p>
+    <a href="#" class="btn btn-primary">Add Product</a>
+  </div>
+</div>
+    </div>
+    {% endfor %}
+</div>
+
+</div>
+{% endblock %}
